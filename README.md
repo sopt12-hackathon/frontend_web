@@ -50,9 +50,12 @@
 
 #### **현주희**
 + 동영상 재생 페이지 (Result)
-    > 서버에서 영상 url 받아오기
+    > 서버에서 영상 url, title, hashtag 받아오기
     > youtube 동영상 iframe으로 연결
     > redux, redux-saga 이용해서 state 관리
++ 로그인/회원가입 페이지
+    > 서버 통신
+
 
 ## ⚒ 사용한 모듈
 ```
