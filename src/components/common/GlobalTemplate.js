@@ -1,11 +1,13 @@
 import styled from "styled-components";
-
+import background from "../../images/background.png";
 const GlobalTemplateWrap = styled.div`
-    width: 100vw;
     height: 100vh;
+    padding: 0 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url(${background});
+    background-size: cover;
 `;
 
 const GlobalTemplate = ({ children }) => {

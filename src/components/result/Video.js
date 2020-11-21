@@ -1,18 +1,32 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Youtube = styled.div`
-    z-index: 5;
-    position: absolute;
-    left: 1.3rem;
-    top: 5.7rem;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 `;
-function Video ({videoId}) {
-    const src = `https://www.youtube.com/embed/${videoId}`
+function Video({ videoId }) {
+    const src = `https://www.youtube.com/embed/${videoId}`;
     return (
         <Youtube>
-            <iframe width="730" height="411" src={src} title="youtube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe
+                width="100%"
+                src={src}
+                title="youtube"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullscreen
+            ></iframe>
         </Youtube>
-    )
+    );
 }
 export default Video;

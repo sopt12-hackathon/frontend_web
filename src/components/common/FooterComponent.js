@@ -3,9 +3,9 @@ import styled from "styled-components";
 const FooterWarp = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2.6rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2.6rem 20rem;
     position: fixed;
     width: -webkit-fill-available;
     bottom: 0;
