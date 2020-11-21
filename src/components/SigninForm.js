@@ -3,14 +3,14 @@ import styled from "styled-components";
 
 const FormWrap = styled.div`
     width: 37.3rem;
-    height: 48.2rem;
+    height: 66.8vh;
     background-color: #ffffff;
     border: solid 3px #43d2ff;
     position: absolute;
     box-sizing: border-box;
-    top: 11.9rem;
+    top: 16vh;
     right: 26.7rem;
-    margin-bottom: 12rem;
+    margin-bottom: 16vh;
     font-family: AppleSDGothicNeo-Regular;
     font-weight: normal;
     font-stretch: normal;
@@ -23,7 +23,7 @@ const FormWrap = styled.div`
         flex-direction: column;
     }
     p {
-        margin-top: 2.8rem;
+        margin-top: 3.8vh;
         margin-left: 2.1rem;
         font-size: 1.2rem;
         text-align: left;
@@ -40,8 +40,9 @@ const FormWrap = styled.div`
         width: 11.2rem;
         border: solid 3px #43d2ff;
         background-color: #ffffff;
-        margin-top: 17.4rem;
-        margin-left: 23.4rem;
+        position: absolute;
+        bottom: 2.87vh;
+        left: 21.6rem;
         font-size: 1.2rem;
         height: 4rem;
         text-align: center;
@@ -65,7 +66,7 @@ const FormWrap = styled.div`
     }
     .shadow {
         width: 37.3rem;
-        height: 48.2rem;
+        height: 66.8vh;
         position: absolute;
         border-style: none;
         background-color: #ff934f;
