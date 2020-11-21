@@ -5,7 +5,7 @@ const imagePath = {
     minus: "",
     plus: ""
 }
-function Upbutton () {
+function UpButton () {
     const [toggle, setToggle] = useState(true)
     const toggleImage = () => {
         setToggle((prev) => !prev);
@@ -18,4 +18,4 @@ function Upbutton () {
         </>
     )
 }
-export default Upbutton;
+export default UpButton;

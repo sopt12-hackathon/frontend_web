@@ -10,8 +10,10 @@ const Title = styled.div`
 function VideoDescription ({hashtagList, title}) {
     return (
         <>
-            <Title>{title}</Title>
-            {hashtagList.map((hashtag) => <Hashtag>{hashtag}</Hashtag>)}
+            <div> 
+                <Title>{title}</Title>
+                {hashtagList.map((hashtag) => <Hashtag>{hashtag}</Hashtag>)}
+            </div>
         </>
     )
 }
