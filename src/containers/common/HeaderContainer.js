@@ -5,8 +5,11 @@ const HeaderContainer = ({ history }) => {
     const onClickHome = () => {
         history.push("/");
     };
+    const onClickSignin = () => {
+        history.push("/signin");
+    };
 
-    return <HeaderComponent onClickHome={onClickHome} />;
+    return <HeaderComponent onClickHome={onClickHome} onClickSignin={onClickSignin}/>;
 };
 
 export default withRouter(HeaderContainer);
