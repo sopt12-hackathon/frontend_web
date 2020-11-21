@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Hashtag = styled.span`
-    top: 53.2rem;
+    top: 50.1rem;
     position: absolute;
     z-index: 2;
     font-family: 'AppleSDGothicNeo';
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -16,7 +16,7 @@ const Hashtag = styled.span`
     color: #000000;
 `;
 const Title = styled.div`
-    top: 51.2rem;
+    top: 47.7rem;
     position: absolute;
     z-index: 2;
     font-family: 'AppleSDGothicNeo';
