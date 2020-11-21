@@ -2,9 +2,9 @@ import axios from "axios";
 
 const client = axios.create();
 
-// client.defaults.baseURL = "https://external-api-server.com/";
+client.defaults.baseURL = "https://external-api-server.com/";
 
-// client.defaults.headers.common["Authorization"] = "Bearer a1";
+client.defaults.headers.common["x-access-token"] = "dafsafsadfdsafdsadsf";
 
 // axios.intercepter.response.use(
 //   (response) => {
