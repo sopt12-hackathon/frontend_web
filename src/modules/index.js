@@ -7,6 +7,7 @@ import write, { writeSaga } from "./write";
 import post, { postSaga } from "./post";
 import posts, { postsSaga } from "./posts";
 import result, {resultSaga} from "./result";
+import mychart, { mychartSaga } from "./mychart";
 
 const rootReducer = combineReducers({
   auth,
@@ -15,11 +16,19 @@ const rootReducer = combineReducers({
   write,
   post,
   posts,
-  result
+  result,
+  mychart
 });
 
 export function* rootSaga() {
-  yield all([authSaga(), userSaga(), writeSaga(), postSaga(), postsSaga()]);
+    yield all([
+        authSaga(),
+        userSaga(),
+        writeSaga(),
+        postSaga(),
+        postsSaga(),
+        mychartSaga(),
+    ]);
 }
 
 export default rootReducer;
