@@ -12,11 +12,12 @@ const [CHECK, CHECK_SUCCESS, CHECK_FAILURE] = createRequestActionTypes(
 
 const LOGOUT = "user/LOGOUT";
 
-export const tempSetUser = createAction(TEMP_SET_USER, (user) => user);
+export const result = createAction(TEMP_SET_USER, (user) => user); //time
+// 쏠때 로딩, 끝났을 때 로딩 종료 -> 확인 : createReques
 export const check = createAction(CHECK);
 export const logout = createAction(LOGOUT);
 
-const checkSaga = createRequestSaga(CHECK, authAPI.check);
+const checkSaga = createRequestSaga(CHECK, authAPI.check); // 서버랑 통신 
 
 function checkFailureSaga() {
   try {

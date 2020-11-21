@@ -6,15 +6,18 @@ import user, { userSaga } from "./user";
 import write, { writeSaga } from "./write";
 import post, { postSaga } from "./post";
 import posts, { postsSaga } from "./posts";
+import result, {resultSaga} from "./result";
 import mychart, { mychartSaga } from "./mychart";
+
 const rootReducer = combineReducers({
-    auth,
-    loading,
-    user,
-    write,
-    post,
-    posts,
-    mychart,
+  auth,
+  loading,
+  user,
+  write,
+  post,
+  posts,
+  result,
+  mychart
 });
 
 export function* rootSaga() {
