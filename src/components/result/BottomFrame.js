@@ -13,12 +13,12 @@ const Frame = styled.div`
     border: solid 3px #43d2ff;
     /* z-index: 1; */
 `;
-function BottomFrame ({data}) {
+function BottomFrame ({id, hashtagList, title}) {
     return (
         <>
             <Frame>
-                <Video videoId={data.id}/>
-                <VideoDescription hashtagList={data.hashtagList} title={data.title}/>
+                <Video videoId={id}/>
+                <VideoDescription hashtagList={hashtagList} title={title}/>
             </Frame>
         </>
     )

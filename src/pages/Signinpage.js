@@ -3,6 +3,7 @@ import SignForm from "../containers/SignForm";
 import GlobalTemplate from "../components/common/GlobalTemplate";
 
 function SigninPage() {
+    
     return(
         <GlobalTemplate>
             <div className="SigninForm">

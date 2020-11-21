@@ -28,6 +28,7 @@ export function* rootSaga() {
         postSaga(),
         postsSaga(),
         mychartSaga(),
+        resultSaga()
     ]);
 }
 
