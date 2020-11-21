@@ -4,6 +4,7 @@ import one from "../../images/one.png";
 import two from "../../images/two.png";
 import five from "../../images/five.png";
 import ten from "../../images/ten.png";
+import arrow from "../../images/arrow.png";
 
 const MyBedgeWrap = styled.div`
     grid-area: bedge;
@@ -39,6 +40,9 @@ const MyBedgeButton = styled.button`
     font-weight: bolder;
     box-shadow: 10px 10px #ff934f;
     transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     cursor: pointer;
     &:focus {
         outline: none;
@@ -52,6 +56,12 @@ const MyBedgeButton = styled.button`
 const MyBedgeImage = styled.img`
     width: 11rem;
     height: 11rem;
+`;
+
+const MyBedgeArrow = styled.img`
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
 `;
 
 const MyBedgeComponent = () => {
@@ -70,7 +80,9 @@ const MyBedgeComponent = () => {
                     </>
                 }
             />
-            <MyBedgeButton>운동하러go!!</MyBedgeButton>
+            <MyBedgeButton>
+                운동하러go!! <MyBedgeArrow src={arrow} alt={""} />
+            </MyBedgeButton>
         </MyBedgeWrap>
     );
 };

@@ -8,6 +8,7 @@ import post, { postSaga } from "./post";
 import posts, { postsSaga } from "./posts";
 import result, { resultSaga } from "./result";
 import mychart, { mychartSaga } from "./mychart";
+import modal from "./modal";
 
 const rootReducer = combineReducers({
     auth,
@@ -18,6 +19,7 @@ const rootReducer = combineReducers({
     posts,
     result,
     mychart,
+    modal,
 });
 
 export function* rootSaga() {

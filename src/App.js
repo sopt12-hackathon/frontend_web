@@ -10,7 +10,7 @@ import GlobalStyles from "./lib/GlobalStyles";
 import MyPage from "./pages/MyPage";
 import ResultPage from "./pages/ResultPage";
 import HeaderContainer from "./containers/common/HeaderContainer";
-import FooterComponent from "./components/common/FooterComponent";
+// import FooterComponent from "./components/common/FooterComponent";
 
 const App = () => {
     return (
@@ -21,7 +21,7 @@ const App = () => {
             <Route component={ResultPage} path={"/result/:time"} exact />
             <Route component={SignupPage} path={"/signup"} />
             <Route component={SigninPage} path={"/signin"} />
-            <FooterComponent />
+
             <GlobalStyles />
         </>
     );
