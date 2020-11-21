@@ -7,6 +7,7 @@ import write, { writeSaga } from "./write";
 import post, { postSaga } from "./post";
 import posts, { postsSaga } from "./posts";
 import mychart, { mychartSaga } from "./mychart";
+import modal from "./modal";
 const rootReducer = combineReducers({
     auth,
     loading,
@@ -14,7 +15,7 @@ const rootReducer = combineReducers({
     write,
     post,
     posts,
-    mychart,
+    modal,
 });
 
 export function* rootSaga() {
