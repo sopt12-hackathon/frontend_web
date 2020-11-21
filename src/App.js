@@ -9,6 +9,7 @@ import SignupPage from "./pages/Signuppage";
 import SigninPage from "./pages/Signinpage";
 import GlobalStyles from "./lib/GlobalStyles";
 import MyPage from "./pages/MyPage";
+import ResultPage from "./pages/ResultPage";
 import HeaderContainer from "./containers/common/HeaderContainer";
 import FooterComponent from "./components/common/FooterComponent";
 
@@ -18,6 +19,7 @@ const App = () => {
             <HeaderContainer />
             <Route component={MainPage} path={["/"]} exact />
             <Route component={MyPage} path={"/mypage"} exact />
+            <Route component={ResultPage} path={"/result/:time"} exact />
             <Route component={InputPage} path={"/input"} />
             <Route component={SignupPage} path={"/signup"} />
             <Route component={SigninPage} path={"/signin"} />
