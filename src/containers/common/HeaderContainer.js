@@ -1,7 +1,12 @@
 import HeaderComponent from "../../components/common/HeaderComponent";
+import { withRouter } from "react-router-dom";
 
-const HeaderContainer = () => {
-    return <HeaderComponent />;
+const HeaderContainer = ({ history }) => {
+    const onClickHome = () => {
+        history.push("/");
+    };
+
+    return <HeaderComponent onClickHome={onClickHome} />;
 };
 
-export default HeaderContainer;
+export default withRouter(HeaderContainer);

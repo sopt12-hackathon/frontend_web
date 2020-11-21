@@ -1,15 +1,18 @@
 import styled from "styled-components";
+import MyProfileCardComponent from "./MyProfileCardComponent";
 
 const MyProfileWrap = styled.div`
-    padding: 2.6rem;
     grid-area: profile;
 `;
 
 const MyProfileComponent = () => {
     return (
         <MyProfileWrap>
-            <div>헬 참치</div>
-            <div>Lv. 1000</div>
+            <MyProfileCardComponent
+                title={"Lv 1. 헬린이탈출중"}
+                content={"🐣 김참새"}
+                type={"profile"}
+            />
         </MyProfileWrap>
     );
 };

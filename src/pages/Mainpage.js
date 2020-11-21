@@ -1,11 +1,17 @@
 import React from "react";
+import GlobalTemplate from "../components/common/GlobalTemplate";
+import ListContainer from "../containers/main/ListContainer";
+import FooterComponent from "../components/common/FooterComponent";
 
-const MainPage = () => {
+function MainPage() {
     return (
         <>
-            <div>메인 페이지 입니다</div>
+            <GlobalTemplate>
+                <ListContainer />
+            </GlobalTemplate>
+            <FooterComponent />
         </>
     );
-};
+}
 
 export default MainPage;

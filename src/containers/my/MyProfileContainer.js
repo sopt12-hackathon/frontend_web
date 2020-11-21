@@ -10,8 +10,8 @@ import { mychartResult } from "../../modules/mychart";
 const MyProfileContainer = () => {
     const dispatch = useDispatch();
 
-    const { username, loading } = useSelector(({ mychart, loading }) => ({
-        username: mychart.data,
+    const { data, loading } = useSelector(({ mychart, loading }) => ({
+        data: mychart,
         loading: loading["mychart/MYCHART_RESULT"],
     }));
 
