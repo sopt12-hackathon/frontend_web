@@ -8,7 +8,7 @@ const ListWrap = styled.div`
     justify-content: center;
 `;
 
-function InputList() {
+function InputList({ history }) {
     const timeList = [2, 5, 10, 15];
     const [time, setTime] = React.useState(null);
     
@@ -16,6 +16,7 @@ function InputList() {
         const value = event.target.getAttribute("value");
         console.log(value);
         setTime(value);
+        history.push(`/result/${value}`);
     }
 
     return(
