@@ -46,6 +46,9 @@ const FormWrap = styled.div`
         height: 4rem;
         text-align: center;
     }
+    input:focus {
+        outline: none;
+    }
     h2 {
         font-size: 2.4rem;
         text-align: left;
