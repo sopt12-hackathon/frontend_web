@@ -1,9 +1,9 @@
 import React from "react";
 import { Bar } from "react-chartjs-2";
 import styled from "styled-components";
+import MyProfileCardComponent from "../my/MyProfileCardComponent";
 
 const BarChartWrap = styled.div`
-    padding: 2.5rem;
     grid-area: chart;
 `;
 
@@ -13,25 +13,73 @@ const BarChartComponent = () => {
         datasets: [
             {
                 labels: "e",
-                data: [60, 13, 27, 60, 13, 27, 20],
-                borderWidth: 1,
-                hoverBorderWidth: 1,
+                data: [20, 13, 27, 20, 13, 27, 20],
+                barThickness: 35,
                 backgroundColor: [
-                    "rgba(238, 102, 121, 1)",
-                    "rgba(98, 181, 229, 1)",
-                    "rgba(255, 198, 0, 1)",
+                    "#ff934f",
+                    "#ff934f",
+                    "#ff934f",
+                    "#ff934f",
+                    "#ff934f",
+                    "#ff934f",
+                    "#ff934f",
                 ],
-                fill: true,
             },
         ],
     };
     return (
         <BarChartWrap>
-            <Bar
-                data={data}
-                width={100}
-                height={50}
-                options={{ maintainAspectRatio: false, label: "ㄸ" }}
+            <MyProfileCardComponent
+                title={"주간운동시간"}
+                type={"chart"}
+                content={
+                    <Bar
+                        data={data}
+                        height={120}
+                        options={{
+                            animation: {
+                                duration: 7000,
+                            },
+                            legend: {
+                                display: false,
+                                position: "bottom",
+                            },
+                            title: {
+                                display: false,
+                                text: "1st week 2020",
+                            },
+                            scales: {
+                                pointLabels: {
+                                    fontStyle: "bolder",
+                                },
+                                yAxes: [
+                                    {
+                                        ticks: {
+                                            beginAtZero: false,
+                                            fontStyle: "blod",
+                                            fontColor: "black",
+                                            stepSize: 5,
+                                        },
+                                        gridLines: {
+                                            display: false,
+                                        },
+                                    },
+                                ],
+                                xAxes: [
+                                    {
+                                        ticks: {
+                                            fontStyle: "blod",
+                                            fontColor: "black",
+                                        },
+                                        gridLines: {
+                                            display: false,
+                                        },
+                                    },
+                                ],
+                            },
+                        }}
+                    />
+                }
             />
         </BarChartWrap>
     );

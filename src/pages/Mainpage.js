@@ -1,12 +1,13 @@
 import React from "react";
 import GlobalTemplate from "../components/common/GlobalTemplate";
+import ListContainer from "../containers/main/ListContainer";
 
-const MainPage = () => {
+function MainPage() {
     return (
         <GlobalTemplate>
-            <div>메인 페이지 입니다</div>
+            <ListContainer />
         </GlobalTemplate>
     );
-};
+}
 
 export default MainPage;
