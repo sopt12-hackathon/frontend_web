@@ -4,7 +4,7 @@ import SigninForm from "../components/SigninForm";
 import {useDispatch, useSelector} from 'react-redux';
 import {login} from "../modules/auth";
 
-function SignForm({ page }) {
+function SignForm({ page, history }) {
     
     const dispatch = useDispatch();
     
@@ -15,9 +15,10 @@ function SignForm({ page }) {
     })
 
     function LoginSubmit(event) {
+        console.log(history)
         event.preventDefault();
         dispatch(login({email: loginInfo.email, password: loginInfo.password}));
-        
+        // history.push('/')
     }
     const {data, loading} = useSelector(({auth, loading}) => ({
         data: auth.auth,
