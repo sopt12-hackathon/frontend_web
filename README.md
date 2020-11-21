@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# 🏃‍♀️🏃‍♂️ 헬린2분
+![헬린2분]()
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> 헬린2분,
+> 침대 중독에서 운동 중독으로! 핫바디가 되고 싶은 당신을 위한 막간 홈트레이닝 추천 서비스
 
-## Available Scripts
+## 🎁 서비스 핵심기능
+#### ⚽ 메인 페이지
++ 홈트레이닝 영상의 길이를 선택할 수 있음 *(2, 5, 10, 15분)*
 
-In the project directory, you can run:
+#### 🎳 영상 페이지
++ 선택한 시간에 맞는 영상을 랜덤으로 자동 재생
++ 영상을 다시 추천받거나 종료할 수 있음
++ 영상에 대한 좋아요/싫어요 수집
++ 영상 재생을 완료했을 경우:
+    + 종료
+    + 영상 재추천
++ 비로그인 상태일 경우:
+    + 로그인/회원가입 모달
 
-### `yarn start`
+#### 🏓 로그인 페이지
++ 이메일 주소, 비밀번호로 로그인
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### 🏑 회원가입 페이지
++ 이름, 이메일 주소, 비밀번호로 회원가입
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### 🤿 마이 페이지
++ 이름과 뱃지 표시
++ 총 운동 시간과 주간 운동 시간 그래프 표시
++ 뱃지 획득 현황 표시
 
-### `yarn test`
+## 💻 개발 담당 부분
+#### **권소희**
++ 메인 페이지(Input)
+    > 시간 배열 길이에 따라서 시간 블록을 동적으로 생성
+    > 시간 블록을 클릭하면 해당 시간을 받아서 고차컴포넌트`withRouter`와 `history.push()`를 통해 해당하는 영상 페이지로 연결
++ 로그인/회원가입 페이지
+    > `useState`를 통해 input 동적으로 받아오기
+    > 로그인/회원가입 컴포넌트를 `src/containers/my/SignForm.js`에서 한 번에 관리
++ README 문서 작성
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### **이동훈**
++
++
 
-### `yarn build`
+#### **현주희**
++
++
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## ⚒ 사용한 모듈
+```
+    "axios": "^0.21.0",
+    "chart.js": "^2.9.4",
+    "immer": "^8.0.0",
+    "quill": "^1.3.7",
+    "react-chartjs-2": "^2.11.1",
+    "react-helmet-async": "^1.0.7",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "redux-actions": "^2.6.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-saga": "^1.1.3",
+    "styled-components": "^5.2.1",
+    "styled-reset": "^4.3.1",
+```
