@@ -20,7 +20,7 @@ const HeaderAuthButton = styled.div`
     cursor: pointer;
 `;
 
-const HeaderComponent = ({ onClickHome }) => {
+const HeaderComponent = ({ onClickHome, onClickSignin }) => {
     return (
         <HeaderWarp>
             <img
@@ -32,7 +32,7 @@ const HeaderComponent = ({ onClickHome }) => {
             />
             <HeaderAuthWrap>
                 <HeaderAuthButton>마이페이지</HeaderAuthButton>
-                <HeaderAuthButton>로그인</HeaderAuthButton>
+                <HeaderAuthButton onClick={onClickSignin} >로그인</HeaderAuthButton>
             </HeaderAuthWrap>
         </HeaderWarp>
     );
